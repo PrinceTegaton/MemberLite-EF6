@@ -1,0 +1,30 @@
+﻿@model MemberLite_EF6.Models.Users
+@{
+    ViewBag.Title = "Secure";
+}
+
+<h2>This is a secure page!</h2>
+<p>
+    User ID: <strong>@Model.UserID</strong> @*@User.Identity.Name*@
+</p>
+<p>
+   First Name: <strong>@Model.FirstName</strong>
+</p>
+<p>
+   Other Names: <strong>@Model.OtherNames</strong>
+</p>
+<p>
+    Account Type: @Model.UserSignInType
+</p>
+<p>
+    Email Address: @Model.Email
+</p>
+<p>
+    Phone Number: @Model.Phone
+</p>
+<p>
+    Joined since: @AppUtility.DateTimeToWord(Model.DateStamp);
+</p>
+<p>
+    <a href="VerifyEmail?e=@(Html.Encode(Model.Email))&c=@Model.VerificationCode">Verify Email</a>
+</p>

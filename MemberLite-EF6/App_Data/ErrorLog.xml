@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<errorlog>
+  <log code="200" message="&#xD;&#xA;Models.MemberLiteModel.msl(18,10) : error 3004: Problem in mapping fragments starting at line 18:No mapping specified for properties Users.PasswordSalt in Set Users.&#xD;&#xA;An Entity with Key (PK) will not round-trip when:&#xD;&#xA;  Entity is type [MemberLite.Users]&#xD;&#xA;" datetime="4/1/2018 7:36 PM" page="/Home/Signup" ip="127.0.0.1" />
+  <log code="200" message="&#xD;&#xA;Models.MemberLiteModel.msl(18,10) : error 3004: Problem in mapping fragments starting at line 18:No mapping specified for properties Users.PasswordSalt in Set Users.&#xD;&#xA;An Entity with Key (PK) will not round-trip when:&#xD;&#xA;  Entity is type [MemberLite.Users]&#xD;&#xA;" datetime="4/1/2018 7:38 PM" page="/Home/Signup" ip="127.0.0.1" />
+</errorlog>

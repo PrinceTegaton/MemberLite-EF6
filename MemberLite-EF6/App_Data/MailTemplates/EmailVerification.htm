@@ -1,0 +1,57 @@
+﻿<style type="text/css">
+    table {
+        border: 1px solid gainsboro;
+        font-family: 'Segoe UI', Calibri, Arial, Tahoma, Verdana;
+        width: 700px;
+        max-width: 100%;
+    }
+
+    thead tr {
+        background-color: #ff006e;
+        color: #fff;
+        text-align: center;
+    }
+
+    tfoot tr {
+        background-color: gainsboro;
+        text-align: center;
+    }
+
+    tbody td {
+        vertical-align: top;
+    }
+
+    p15 {
+        padding: 15px;
+    }
+</style>
+<table align="center" cellpadding="15">
+    <thead>
+        <tr>
+            <td>
+                <img src="{site_url}/Imgs/logo.png" alt="{site_name}" /></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <div class="p15">
+                    <h3>Account Email Verification</h3>
+                    <p>Hi {name}, welcome to {site_name}. Please follow the link below to confirm you have used this email address to register on our platform. By verifying this email address you will be able to receive notifications from your account.</p>
+                    <p>Email address: {email}</p>
+                    <p style="font-size: 18px"><a href="{verify_link}">Click here to verify now</a></p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                <p>
+                    All enquiries should be forwarded to <a href="mailto:{support_mail}">{support_mail}</a>
+                </p>
+                <p><a href="{site_url}">{site_name}</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy</a></p>
+            </td>
+        </tr>
+    </tfoot>
+</table>

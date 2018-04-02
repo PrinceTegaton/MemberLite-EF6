@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - @AppConfig.Name</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,13 +16,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink(@AppConfig.Name, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Secure", "Secure", "Home")</li>
+                    <li>@Html.ActionLink("Change Password", "ChangePassword", "Home")</li>
+                    <li>@Html.ActionLink("Update Profile", "UpdateProfile?", "Home")</li>
+                    <li>@Html.ActionLink("Change Profile Photo", "Avatar", "Home")</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a href="#" id="logout" class="dropdown-item">Sign Out</a></li>
+                    }
                 </ul>
             </div>
         </div>
@@ -31,12 +37,18 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - @AppConfig.Name</p>
         </footer>
     </div>
-
+    
+    @using (Html.BeginForm("SignOut", "Home", FormMethod.Post, new { id = "logoutUser" })) { }
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        $('#logout').click(function () {
+            $('#logoutUser').submit();
+        });
+    </script>
 </body>
 </html>

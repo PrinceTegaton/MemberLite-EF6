@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MemberLite_EF6")]
+[assembly: AssemblyTitle("MemberLite")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MemberLite_EF6")]
+[assembly: AssemblyProduct("MemberLite")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("24cfaaf9-8f5f-4aca-bef0-efe53f3a452b")]
+[assembly: Guid("3647ef37-6174-426e-88ba-daa45a61c15c")]
 
 // Version information for an assembly consists of the following four values:
 //
