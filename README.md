@@ -2,8 +2,7 @@
 Simple and flexible asp.net membership system with C#, Entity Framework 6 and FormsAuthentication
 
 By default Microsoft ASP.NET FormsAuthentication provides you with Owin Authentication classes using Entity Framework, but sometimes it gets so clumsy and hard to customize for beginners and even pros.
-MemberLite-EF6 is a lightweight system that is easy to use and highly customizable with codes for all setups.
-It provides the basics of FormsAuthentication and can easily be incorporated into existing apps and database. Some core features includes;
+MemberLite-EF6 is a lightweight system that is easy to use and highly customizable with codes for all setups. It takes you behind the scene for effective control of the process. MemberLite provides the basics of FormsAuthentication and can easily be incorporated into existing apps and database. Some core features includes;
 * Signup
 * Signin
 * Send email verification with HTML template 
@@ -23,7 +22,7 @@ The database contains 2 tables - Users and LoginHistory.
 Execute the database script MemberLite.sql from App_Data folder.
 
 ## AppUtility Helper Class
-I addition, a very rich AppUtility class is available. It contains several methods that developers use from regularly in every application. Some methods include;
+I addition, a very rich AppUtility class is available. It contains several methods that developers use regularly in every application. Some methods include;
 * GetDeviceType()
 * GetUserIPAddress()
 * CleanUrlSlug(string Str, int MaxLength = 50)
