@@ -5,7 +5,7 @@ By default Microsoft ASP.NET FormsAuthentication provides you with Owin Authenti
 MemberLite-EF6 is a lightweight system that is easy to use and highly customizable with codes for all setups. It takes you behind the scene for effective control of the process. MemberLite provides the basics of FormsAuthentication and can easily be incorporated into existing apps and database. Some core features includes;
 * Signup
 * Signin
-* Send email verification with HTML template 
+* Send verification email with HTML template 
 * Verify email
 * Change password
 * Retrieve password with HTML template
