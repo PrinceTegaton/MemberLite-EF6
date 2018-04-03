@@ -272,6 +272,12 @@ public class AppUtility
         return "";
     }
 
+    public static void DeleteCookie(string Cookie)
+    {
+        HttpResponse rsp = HttpContext.Current.Response;
+        rsp.Cookies.Remove(Cookie);
+    }
+
     public class Country
     {
         public string Name { get; set; }
